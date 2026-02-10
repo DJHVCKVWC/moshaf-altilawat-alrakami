@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل تطبيق مصحف التلاوات الرقمي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استخدام خط أميري لمحاكاة الرسم العثماني وخط تجول للنصوص العادية -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c5e4f;
+            --accent-color: #d4af37;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fcfbf7;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .quran-font {
+            font-family: 'Amiri', serif;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .btn-download {
+            background-color: var(--primary-color);
+            color: white;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-download:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+        .note-box {
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- عنوان الترحيب بالخط العثماني -->
+        <h1 class="text-5xl md:text-6xl quran-font font-bold mb-8 text-[#2c5e4f]">
+            أهلاً بك !
+        </h1>
+        
+        <p class="text-xl mb-12 text-gray-700 leading-relaxed">
+            يمكنك الآن تحميل تطبيق <span class="font-bold">"مصحف التلاوات الرقمي"</span>.
+        </p>
+
+        <!-- زر التحميل تم تغيير الاسم والرابط -->
+        <a href="https://www.mediafire.com/file/9p52ztnvskrni2x/مصحف+التلاوات+الرقمي.apk/file" 
+           target="_blank"
+           class="btn-download inline-block px-12 py-4 text-2xl rounded-lg font-bold w-full shadow-sm">
+            الذهاب لرابط التحميل
+        </a>
+
+        <!-- الملحوظة -->
+        <div class="note-box">
+            <p class="text-gray-600 leading-relaxed text-lg text-right">
+                <span class="font-bold text-red-700">ملحوظة :</span>
+                إذا كان هناك بعض الشيوخ لا تحتوي على تلاوات السور كاملة فهذا معناه ان الشيخ لا يمتلك تلاوات السور الغير موجودة في خانته.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
